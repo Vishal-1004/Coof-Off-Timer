@@ -64,11 +64,13 @@
         );
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        var hoursFormatted = hours < 10 ? "0" + hours : hours;
+        var minutesFormatted = minutes < 10 ? "0" + minutes : minutes;
         var secondsFormatted = seconds < 10 ? "0" + seconds : seconds;
 
         // Output the result in an element with id="demo"
         document.getElementById("demo").innerHTML =
-          hours + ":" + minutes + ":" + secondsFormatted;
+          hoursFormatted + ":" + minutesFormatted + ":" + secondsFormatted;
         /* `${hours}<span id="timer-text">Hours</span> : ${minutes}<span id="timer-text">Minutes</span> : ${seconds}<span id="timer-text">Seconds</span>`;*/
 
         // If the count down is over, write some text
