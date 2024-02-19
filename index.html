@@ -27,6 +27,11 @@
         position: relative;
         top: -50px;
       }
+      .heading{
+        font-size: 0.5rem !important;
+        margin-top: 0;
+        margin-bottom: 50px;
+      }
       #timer-text {
         font-size: 0.25rem !important;
       }
@@ -35,13 +40,14 @@
   </head>
   <body>
     <div class="demo-div">
-      <img class="logo" src="logo.svg" alt="Cookoff Logo" width="300px" />
-      <p id="demo"></p>
+        <img class="logo" src="logo.svg" alt="Cookoff Logo" width="300px" />
+        <h4 class="heading">Ideation Round</h4>
+        <p id="demo"></p>
     </div>
 
     <script>
       // Set the date we're counting down to
-      var countDownDate = new Date("Feb 20, 2024 16:30:00").getTime();
+      var countDownDate = new Date("Feb 20, 2024 16:00:00").getTime();
 
       // Update the count down every 1 second
       var x = setInterval(function () {
